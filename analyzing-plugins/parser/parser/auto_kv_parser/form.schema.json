@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "sections": [
+    {
+      "title": "解析配置",
+      "fields": [
+        "separator_chars",
+        "allow_multiline",
+        "punct_chars",
+        "allow_key_start_with_digit"
+      ]
+    }
+  ],
+  "fields": {
+    "separator_chars": {
+      "type": "string",
+      "required": false,
+      "default": ":：",
+      "widget": "input",
+      "label": "键值分隔符",
+      "placeholder": ":："
+    },
+    "allow_multiline": {
+      "type": "boolean",
+      "required": false,
+      "default": false,
+      "widget": "switch",
+      "label": "允许跨行"
+    },
+    "punct_chars": {
+      "type": "string",
+      "required": false,
+      "default": "\\s,;，；。、",
+      "widget": "input",
+      "label": "键值对分隔符",
+      "placeholder": "\\s,;，；。、"
+    },
+    "allow_key_start_with_digit": {
+      "type": "boolean",
+      "required": false,
+      "default": false,
+      "widget": "switch",
+      "label": "允许键以数字开头"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+plugin_id = "line"
+name = "按行切分器"
+version = "0.1.0"
+plugin_role = "biz"
+plugin_type = "splitter"
+runtime_mode = "inproc"
+sdk_version = ">=1.0.0"
+summary = "将文本按行切分为多条片段。"
+description = "一个进程内切分插件，用于将输入文本以行为单位进行拆分输出。"
+
+[capabilities]
+accepts_text = true
+accepts_structured_input = false
+returns_multiple = true
+returns_hierarchical = false
+
+[runtime]
+kind = "inproc"
+search_paths = [""]
+
+[runtime.entrypoint]
+module = "line.plugin"
+attribute = "build_plugin"

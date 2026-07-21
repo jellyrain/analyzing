@@ -1,0 +1,24 @@
+plugin_id = "anchor"
+name = "锚点切分器"
+version = "0.1.0"
+plugin_role = "biz"
+plugin_type = "splitter"
+runtime_mode = "inproc"
+sdk_version = ">=1.0.0"
+summary = "按起止锚点从文本中切出多个片段。"
+description = "一个支持普通字符串锚点和正则锚点的进程内切分插件。"
+form_schema_file = "form.schema.json"
+
+[capabilities]
+accepts_text = true
+accepts_structured_input = false
+returns_multiple = true
+returns_hierarchical = false
+
+[runtime]
+kind = "inproc"
+search_paths = [""]
+
+[runtime.entrypoint]
+module = "anchor.plugin"
+attribute = "build_plugin"

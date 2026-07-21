@@ -1,0 +1,24 @@
+plugin_id = "choice"
+name = "选项解析器"
+version = "0.1.0"
+plugin_role = "biz"
+plugin_type = "parser"
+runtime_mode = "inproc"
+sdk_version = ">=1.0.0"
+summary = "按指定标记提取选项内容。"
+description = "一个基于标记聚类提取的进程内解析插件。"
+form_schema_file = "form.schema.json"
+
+[capabilities]
+accepts_text = true
+accepts_structured_input = false
+returns_multiple = true
+returns_hierarchical = false
+
+[runtime]
+kind = "inproc"
+search_paths = [""]
+
+[runtime.entrypoint]
+module = "choice.plugin"
+attribute = "build_plugin"

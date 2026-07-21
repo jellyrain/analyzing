@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "sections": [
+    {
+      "title": "锚点配置",
+      "fields": [
+        "anchor_start",
+        "anchor_end",
+        "is_regex"
+      ]
+    }
+  ],
+  "fields": {
+    "anchor_start": {
+      "type": "string",
+      "required": true,
+      "default": "",
+      "widget": "input",
+      "label": "起始锚点",
+      "placeholder": "###"
+    },
+    "anchor_end": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "widget": "input",
+      "label": "结束锚点"
+    },
+    "is_regex": {
+      "type": "boolean",
+      "required": false,
+      "default": false,
+      "widget": "switch",
+      "label": "正则模式"
+    }
+  }
+}

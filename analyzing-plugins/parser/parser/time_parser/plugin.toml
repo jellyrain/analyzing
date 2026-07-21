@@ -1,0 +1,24 @@
+plugin_id = "time"
+name = "高精度时间解析器"
+version = "0.1.0"
+plugin_role = "biz"
+plugin_type = "parser"
+runtime_mode = "inproc"
+sdk_version = ">=1.0.0"
+summary = "围绕指定关键词提取日期和时间信息。"
+description = "一个面向事件关键词的高精度时间解析插件。"
+form_schema_file = "form.schema.json"
+
+[capabilities]
+accepts_text = true
+accepts_structured_input = false
+returns_multiple = true
+returns_hierarchical = false
+
+[runtime]
+kind = "inproc"
+search_paths = [""]
+
+[runtime.entrypoint]
+module = "time_parser_impl.plugin"
+attribute = "build_plugin"

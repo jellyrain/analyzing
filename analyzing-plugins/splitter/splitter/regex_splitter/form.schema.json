@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "sections": [
+    {
+      "title": "正则配置",
+      "fields": [
+        "pattern"
+      ]
+    }
+  ],
+  "fields": {
+    "pattern": {
+      "type": "string",
+      "required": true,
+      "default": "",
+      "widget": "input",
+      "label": "切分正则",
+      "placeholder": "\\\\s+"
+    }
+  }
+}

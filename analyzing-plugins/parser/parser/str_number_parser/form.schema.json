@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "sections": [
+    {
+      "title": "数值配置",
+      "fields": ["absolute"]
+    }
+  ],
+  "fields": {
+    "absolute": {
+      "type": "boolean",
+      "required": false,
+      "default": false,
+      "widget": "switch",
+      "label": "取绝对值"
+    }
+  }
+}

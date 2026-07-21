@@ -1,0 +1,23 @@
+plugin_id = "str_time"
+name = "字符串时间解析器"
+version = "0.1.0"
+plugin_role = "biz"
+plugin_type = "parser"
+runtime_mode = "inproc"
+sdk_version = ">=1.0.0"
+summary = "直接从文本中提取日期和时间字符串。"
+description = "一个面向日期时间文本抽取的进程内解析插件。"
+
+[capabilities]
+accepts_text = true
+accepts_structured_input = false
+returns_multiple = true
+returns_hierarchical = false
+
+[runtime]
+kind = "inproc"
+search_paths = [""]
+
+[runtime.entrypoint]
+module = "str_time.plugin"
+attribute = "build_plugin"

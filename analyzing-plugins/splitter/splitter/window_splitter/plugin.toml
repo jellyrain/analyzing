@@ -1,0 +1,24 @@
+plugin_id = "window"
+name = "滑动窗口切分器"
+version = "0.1.0"
+plugin_role = "biz"
+plugin_type = "splitter"
+runtime_mode = "inproc"
+sdk_version = ">=1.0.0"
+summary = "使用滑动窗口将长文本切分为多个片段。"
+description = "一个支持窗口大小和重叠长度配置的进程内切分插件。"
+form_schema_file = "form.schema.json"
+
+[capabilities]
+accepts_text = true
+accepts_structured_input = false
+returns_multiple = true
+returns_hierarchical = false
+
+[runtime]
+kind = "inproc"
+search_paths = [""]
+
+[runtime.entrypoint]
+module = "window.plugin"
+attribute = "build_plugin"

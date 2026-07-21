@@ -1,0 +1,23 @@
+plugin_id = "sentence"
+name = "句子切分器"
+version = "0.1.0"
+plugin_role = "biz"
+plugin_type = "splitter"
+runtime_mode = "inproc"
+sdk_version = ">=1.0.0"
+summary = "按中文句末标点切分文本。"
+description = "一个基于句末标点规则的进程内切分插件。"
+
+[capabilities]
+accepts_text = true
+accepts_structured_input = false
+returns_multiple = true
+returns_hierarchical = false
+
+[runtime]
+kind = "inproc"
+search_paths = [""]
+
+[runtime.entrypoint]
+module = "sentence.plugin"
+attribute = "build_plugin"

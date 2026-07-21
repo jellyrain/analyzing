@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "sections": [
+    {
+      "title": "窗口配置",
+      "fields": [
+        "window_size",
+        "overlap"
+      ]
+    }
+  ],
+  "fields": {
+    "window_size": {
+      "type": "integer",
+      "required": true,
+      "default": 512,
+      "widget": "input",
+      "label": "窗口大小"
+    },
+    "overlap": {
+      "type": "integer",
+      "required": false,
+      "default": 128,
+      "widget": "input",
+      "label": "重叠长度"
+    }
+  }
+}

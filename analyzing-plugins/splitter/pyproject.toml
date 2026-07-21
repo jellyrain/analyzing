@@ -1,0 +1,21 @@
+[project]
+name = "splitter"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12.11"
+dependencies = [
+    "analyzing-plugin>=1.0.5",
+]
+
+[dependency-groups]
+dev = [
+    "analyzing-build>=1.0.5",
+    "analyzing-test>=1.0.0",
+    "ruff>=0.15.21",
+]
+
+[[tool.uv.index]]
+name = "data-analyzing"
+url = "https://6861e2de5c231c362c532abd:O0Bs2P5a2aNm@packages.aliyun.com/685cbdae0efe727709627066/pypi/data-analyzing"
+authenticate = "always"

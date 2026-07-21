@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "sections": [
+    {
+      "title": "选项配置",
+      "fields": [
+        "markers",
+        "allow_multiline",
+        "is_suffix_marker",
+        "strip_chars"
+      ]
+    }
+  ],
+  "fields": {
+    "markers": {
+      "type": "array",
+      "required": true,
+      "default": [],
+      "widget": "list",
+      "label": "选项标记",
+      "items": {
+        "type": "string"
+      }
+    },
+    "allow_multiline": {
+      "type": "boolean",
+      "required": false,
+      "default": false,
+      "widget": "switch",
+      "label": "允许跨行"
+    },
+    "is_suffix_marker": {
+      "type": "boolean",
+      "required": false,
+      "default": false,
+      "widget": "switch",
+      "label": "后缀标记"
+    },
+    "strip_chars": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "widget": "input",
+      "label": "裁剪字符",
+      "placeholder": "、；"
+    }
+  }
+}

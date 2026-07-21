@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "sections": [
+    {
+      "title": "时间配置",
+      "fields": [
+        "keyword",
+        "window_size",
+        "direction"
+      ]
+    }
+  ],
+  "fields": {
+    "keyword": {
+      "type": "string",
+      "required": true,
+      "default": "",
+      "widget": "input",
+      "label": "事件关键词",
+      "placeholder": "开始手术时间"
+    },
+    "window_size": {
+      "type": "integer",
+      "required": false,
+      "default": 100,
+      "widget": "input",
+      "label": "搜索窗口"
+    },
+    "direction": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "widget": "select",
+      "label": "时间方向",
+      "allow_empty": true,
+      "options": [
+        {
+          "label": "向前",
+          "value": "front"
+        },
+        {
+          "label": "向后",
+          "value": "back"
+        }
+      ]
+    }
+  }
+}

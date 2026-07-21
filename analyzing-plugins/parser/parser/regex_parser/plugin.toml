@@ -1,0 +1,24 @@
+plugin_id = "re"
+name = "正则解析器"
+version = "0.1.1"
+plugin_role = "biz"
+plugin_type = "parser"
+runtime_mode = "inproc"
+sdk_version = ">=1.0.0"
+summary = "使用正则表达式从文本中提取内容。"
+description = "一个基于正则表达式的进程内解析插件。"
+form_schema_file = "form.schema.json"
+
+[capabilities]
+accepts_text = true
+accepts_structured_input = false
+returns_multiple = true
+returns_hierarchical = false
+
+[runtime]
+kind = "inproc"
+search_paths = [""]
+
+[runtime.entrypoint]
+module = "regex.plugin"
+attribute = "build_plugin"

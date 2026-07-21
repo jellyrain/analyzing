@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "sections": [
+    {
+      "title": "正则配置",
+      "fields": [
+        "pattern",
+        "group_index",
+        "negative_pattern"
+      ]
+    }
+  ],
+  "fields": {
+    "pattern": {
+      "type": "string",
+      "required": true,
+      "default": "",
+      "widget": "input",
+      "label": "正则表达式",
+      "placeholder": "(\\S+)"
+    },
+    "group_index": {
+      "type": "integer",
+      "required": false,
+      "default": 1,
+      "widget": "input",
+      "label": "捕获组索引"
+    },
+    "negative_pattern": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "widget": "input",
+      "label": "否定词正则",
+      "placeholder": "无|未见|否认"
+    }
+  }
+}

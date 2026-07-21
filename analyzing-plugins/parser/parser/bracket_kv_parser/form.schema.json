@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "sections": [
+    {
+      "title": "括号配置",
+      "fields": [
+        "left_bracket",
+        "right_bracket",
+        "allow_multiline"
+      ]
+    }
+  ],
+  "fields": {
+    "left_bracket": {
+      "type": "string",
+      "required": false,
+      "default": "【",
+      "widget": "input",
+      "label": "左括号",
+      "placeholder": "【"
+    },
+    "right_bracket": {
+      "type": "string",
+      "required": false,
+      "default": "】",
+      "widget": "input",
+      "label": "右括号",
+      "placeholder": "】"
+    },
+    "allow_multiline": {
+      "type": "boolean",
+      "required": false,
+      "default": false,
+      "widget": "switch",
+      "label": "允许跨行"
+    }
+  }
+}

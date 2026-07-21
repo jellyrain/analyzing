@@ -1,0 +1,3 @@
+variant = "plain"
+include = ["plugin.toml", "str_time"]
+exclude = []
