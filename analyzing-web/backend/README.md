@@ -1,0 +1,1 @@
+uv run python -m nuitka --standalone --remove-output --output-dir=build --output-filename=analyzing-web --include-data-dir=static=static --include-package=fastapi --include-package=uvicorn --include-package=httpx main.py
