@@ -1,0 +1,29 @@
+[project]
+name = "analyzing-compat"
+version = "1.0.1"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12.11"
+dependencies = [
+    "analyzing-plugin>=1.0.0",
+    "packaging>=26.2",
+]
+
+[dependency-groups]
+dev = [
+    "build>=1.5.0",
+    "ruff>=0.15.20",
+    "twine>=6.2.0",
+]
+
+[[tool.uv.index]]
+name = "data-analyzing"
+url = "https://6861e2de5c231c362c532abd:O0Bs2P5a2aNm@packages.aliyun.com/685cbdae0efe727709627066/pypi/data-analyzing"
+authenticate = "always"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/analyzing"]
