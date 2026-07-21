@@ -1,0 +1,30 @@
+[server]
+host = "0.0.0.0"
+port = 8000
+
+[paths]
+plugins_dir = "plugins"
+data_dir = "data"
+logs_dir = "data/logs"
+runtime_plugins_dir = "data/plugins"
+
+[remote]
+# 是否允许未携带注册令牌的 remote 插件匿名接入
+allow_anonymous_remote = false
+# 统一的 remote 注册令牌
+shared_token = "kRc99IfBfBTXw2VXwGj1"
+
+[infra.storage]
+# 存储插件
+plugin_id = "storage.sqlite"
+config_file = "config/infra/storage.sqlite.toml"
+
+[plugins.load]
+# 默认加载策略
+default = "lazy"
+
+[plugins.startup]
+# 启动时立即加载的插件 ID 列表
+plugin_ids = [
+    "storage.sqlite",
+]

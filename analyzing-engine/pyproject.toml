@@ -1,0 +1,30 @@
+[project]
+name = "analyzing-engine"
+version = "1.0.0"
+description = "Document analysis engine with pluggable parser, splitter, and infrastructure components"
+readme = "README.md"
+requires-python = ">=3.12.11"
+dependencies = [
+    "analyzing-compat>=1.0.1",
+    "analyzing-monitor>=1.0.1",
+    "analyzing-persistence>=1.0.2",
+    "analyzing-plugin>=1.0.5",
+    "fastapi>=0.139.0",
+    "httpx>=0.28.1",
+    "jsonpath-ng>=1.8.0",
+    "psutil>=7.2.2",
+    "pydantic>=2.13.4",
+    "python-multipart>=0.0.32",
+    "uvicorn>=0.51.0",
+]
+
+[dependency-groups]
+dev = [
+    "analyzing-build>=1.2.0",
+    "ruff>=0.15.21",
+]
+
+[[tool.uv.index]]
+name = "data-analyzing"
+url = "https://6861e2de5c231c362c532abd:O0Bs2P5a2aNm@packages.aliyun.com/685cbdae0efe727709627066/pypi/data-analyzing"
+authenticate = "always"
