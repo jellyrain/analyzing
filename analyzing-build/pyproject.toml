@@ -1,0 +1,31 @@
+[project]
+name = "analyzing_build"
+version = "1.2.0"
+description = "Build tooling for packaging analyzing plugins into .rain artifacts"
+readme = "README.md"
+requires-python = ">=3.12.11"
+dependencies = [
+    "analyzing-compat>=1.0.1",
+    "analyzing-plugin>=1.0.5",
+    "nuitka>=4.1.3",
+    "tomli-w>=1.2.0",
+]
+
+[dependency-groups]
+dev = [
+    "build>=1.5.1",
+    "ruff>=0.15.21",
+    "twine>=6.2.0",
+]
+
+[[tool.uv.index]]
+name = "data-analyzing"
+url = "https://6861e2de5c231c362c532abd:O0Bs2P5a2aNm@packages.aliyun.com/685cbdae0efe727709627066/pypi/data-analyzing"
+authenticate = "always"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/analyzing"]
